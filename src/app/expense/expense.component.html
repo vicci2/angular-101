@@ -1,0 +1,136 @@
+<h3><p align="center">{{expense_string}} expense</p></h3>
+<ul>
+  <!-- value:{{itemsformgroup.value | json}} -->
+  <div *ngFor="let exp of myexpenses">
+    <li>        
+      <h3>
+        <p style="color: rgb(156, 130, 130);">
+        {{exp.id}} -- {{exp.expense}} -- {{exp.quantity}} --{{exp.cost}}
+        </p>
+      </h3>          
+    </li>  
+  </div> 
+</ul> 
+<div class="container">
+  <!-- <h2><ins>Join in</ins></h2> -->
+  <h2><ins>Add AEpense</ins></h2>
+<pre></pre>
+<!-- <form #test="ngForm" (ngSubmit)="submit (test)"> -->
+<!-- <form [formGroup]="itemsformgroup">
+    <div class="form-group">
+      <label for="lname" class="form-label"> Name</label>
+      <input class="form-control" formControlName="name" required minlength="2" maxlength="10" type="text" name="lname" id="lname" >             
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="amount" class="form-label">Expense Amount</label>
+      <input formControlName="amount"  class="form-control"  required minlength="2" maxlength="10" type="number" name="amount" id="amount" >
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="category"class="form-label">Expense Category</label>
+      <input formControlName="category"  class="form-control" required minlength="2" maxlength="10" type="text" name="category" id="category" >
+    </div>
+    <pre></pre> -->
+    <!-- <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input class="form-control" formControlName="email"  required minlength="2" maxlength="10" type="email" name="email" id="email">
+    </div>
+    <pre></pre> -->
+    <!-- <div class="form-group">
+      <label for="date" class="form-label">Date</label>
+      <input class="form-control" formControlName="date"  required minlength="2" maxlength="10" type="date" name="date" id="date">
+    </div>
+    <pre></pre>
+    <div class="bottom">
+    <button type="reset" class="btn btn-warning">
+      Reset
+    </button> -->
+    <!-- <pre></pre> -->
+    <!-- <button type="submit" (click)="test()" class="btn btn-dark">
+      Join
+    </button>      
+    </div>
+</form>  -->
+<form [formGroup]="newitems">
+    <div class="form-group">
+      <label for="uid" class="form-label"> User ID</label>
+      <input class="form-control" formControlName="uid" type="number" name="uid" id="uid" >             
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="expense" class="form-label">Expense</label>
+      <input formControlName="expense"  class="form-control"  type="text" name="expense" id="expense" >
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="quantity" class="form-label">Quantity</label>
+      <input formControlName="quantity"  class="form-control" type="number" name="quantity" id="quantity" >
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="cost" class="form-label">Cost</label>
+      <input class="form-control" formControlName="cost"  type="number" name="cost" id="cost">
+    </div>
+    <pre></pre>
+    <div class="bottom">
+    <button type="reset" class="btn btn-warning">
+      Reset
+    </button>
+    <!-- <pre></pre> -->
+    <button type="submit" (click)="addExpense()" class="btn btn-dark">
+      Add
+    </button>      
+    </div>
+</form> 
+<pre></pre>
+<!-- <button class="btn btn-danger"
+  type="button"
+  (click)="sayMessage()">
+  Trigger alert message
+</button> -->
+<!-- <pre></pre> -->
+<!-- <input type="text" class="form-control" [(ngModel)]="expense_string"> -->
+<!-- <pre></pre> -->
+<!-- <div *ngIf="checker">Shown if checker is true</div> -->
+<pre></pre> 
+<!-- <h2><ins>Simple Calculator</ins></h2>
+<form #formgroup="ngForm" (ngSubmit)="submit()">
+  <div class="form-group">
+   <label for="name" class="form-label">First Number</label> -->
+   <!-- Field validation -->
+   <!-- <input class="form-control" #name="ngModel" required minlength="2" maxlength="10" type="number" name="name" id="name" ngModel>
+   <div *ngIf="name.touched && name.invalid" class="alert alertDanger">
+     <p *ngIf="name.errors">First Number Required</p>         -->
+     <!-- <p *ngIf="name.errors.required">First Name Required</p>         -->
+     <!-- <p *ngIf="name.errors.minlength">First Name is too short</p>        -->
+   <!-- </div>
+ </div>
+ <pre></pre>
+ <div class="form-group">
+   <label for="emaila" Class="form-label">Math Symbol</label>
+   <input class="form-control" #email="ngModel" required minlength="2" maxlength="10"type="Symbol" name="emaila" id="emaila" ngModel>
+   <div *ngIf="email.touched && email.invalid" class="alert alertDanger">
+     <p *ngIf="email.errors">Math Symbol Required</p> 
+   </div>
+ </div>
+ <div class="form-group">
+   <label for="pword" Class="form-label">Second Number</label>
+   <input class="form-control" #pword="ngModel" required minlength="2" maxlength="10"type="number" name="pword" id="pword" ngModel>
+   <div *ngIf="pword.touched && name.invalid" class="alert alertDanger">
+     <p *ngIf="pword.errors">Second Number Required</p>        
+   </div>      
+ </div> 
+ <pre></pre>
+ <div class="bottom">
+  <button type="reset" class="btn btn-warning">
+    Reset
+  </button> -->
+  <!-- <pre></pre> -->
+  <!-- <button type="submit" class="btn btn-dark">
+    Finish
+  </button>      
+  </div> 
+</form>
+<pre></pre> -->
+</div>

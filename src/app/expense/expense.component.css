@@ -1,0 +1,11 @@
+.alertDanger{
+    background-color: rgb(221, 4, 4);
+}
+.alert{
+    color: beige;
+    text-align: left;    
+    pad: 4px 0;
+}
+/* .bottom{
+    display:block;
+} */
