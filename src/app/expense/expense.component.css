@@ -6,6 +6,43 @@
     text-align: left;    
     pad: 4px 0;
 }
-/* .bottom{
-    display:block;
-} */
+.cont{
+    margin: 3px 8rem;
+    display: flex;flex-wrap: wrap;flex-direction: row;    
+}
+.delete{
+    background: rgba(224, 4, 4, 0.616);
+}
+.edit{
+    background: rgb(14, 154, 189);
+}
+.left{
+width:49%;margin-right: 1%;
+}
+.right{
+width:49%;margin-left: 1%;
+padding: 0 2rem;
+}
+table thead {
+    background: rgb(34, 33, 33);
+    color: antiquewhite;
+}
+table tbody tr{
+    background: rgba(48, 0, 0, 0.048);
+}
+.bottom{
+    margin-top: 1rem;
+}
+.fetch{
+    background: rgba(28, 189, 230, 0.678)
+    
+}
+.clear{
+    background: rgba(233, 173, 8, 0.842);
+}
+#btn{
+    outline: none;background: transparent;
+    color: rgb(18, 19, 19);
+    border: none;
+    font-size:medium;    
+}

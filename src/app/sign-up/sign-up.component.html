@@ -1,0 +1,30 @@
+<div class="container">
+    <h2><ins>Join in</ins></h2>
+  <pre></pre>
+  <!-- <form #test="ngForm" (ngSubmit)="submit (test)"> -->
+  <form [formGroup]="join">
+      <div class="form-group">
+        <label for="fname" class="form-label">First Name</label>
+        <input class="form-control" formControlName="first_name" type="text" name="fname" id="fname" >             
+      </div>
+      <pre></pre>
+      <div class="form-group">
+        <label for="lname" class="form-label">Last Name</label>
+        <input class="form-control" formControlName="last_name" type="text" name="lname" id="lname" >             
+      </div>
+      <pre></pre>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input class="form-control" formControlName="email"  type="email" name="email" id="email">
+      </div>
+      <pre></pre>
+      <div class="bottom">
+      <button type="reset" class="btn btn-warning">
+        Clear
+      </button>
+      <button type="submit" (click)="addUser()" class="btn btn-dark">
+        Join
+      </button>    
+      </div>
+  </form>  
+  </div>

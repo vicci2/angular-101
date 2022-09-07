@@ -1,0 +1,10 @@
+.example-form{
+    margin: 10% 30%;
+    display: flex;flex-wrap: wrap;flex-direction: column;
+    justify-content: center;
+    }
+    .example-form h2{
+        text-align: center;
+        color: goldenrod;
+        
+    }

@@ -1,6 +1,6 @@
 export interface Expense {
-    user_id:number;
-    name: string;    
+    userId:number;
+    expense: string;    
     quantity: number;
     cost: number;
   }
